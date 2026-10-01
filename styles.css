@@ -1,0 +1,82 @@
+header {
+    padding-top: 15px;
+    background-color: #780000;
+}
+
+body {
+    background-color: #003049;
+}
+
+h1 {
+    font-family: "Cherry Bomb One", serif;
+    color: #fdf0d5;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #fdf0d5;
+}
+
+h3 {
+    font-family: "Cherry Bomb One", serif;
+    color: #fdf0d5;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;             
+}
+
+article.updown {
+    display: flex;
+    flex-direction: column;
+    background-color: #669bbc;
+    margin-bottom: 25px;
+}
+
+article.sideside {
+    display: flex;
+    flex-direction: column;
+    background-color: #669bbc;
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fdf0d5;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fdf0d5;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fdf0d5; 
+}
