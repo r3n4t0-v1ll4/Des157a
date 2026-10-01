@@ -1,54 +1,65 @@
 header {
+    width: 100%;
+    box-sizing: border-box;
     padding-top: 15px;
+    padding-bottom: 25px;
     background-color: #780000;
+    transition: background-color 1s ease;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #003049;
 }
 
 h1 {
+    font-size: 2.5em;
+    padding-left: 10%;
     font-family: "Cherry Bomb One", serif;
     color: #fdf0d5;
 }
 
 h2 {
+    font-size: 1.3em;
+    padding-left: 10%;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #fdf0d5;
 }
 
 h3 {
+    padding-left: 5%;
     font-family: "Cherry Bomb One", serif;
     color: #fdf0d5;
+    font-size: 1.4em;
 }
 
 .content {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding: 20px;
+    padding: 40px 35px;
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     flex: 1;
 }
 
 .right {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    flex: 1;             
+    gap: 30px;
+    flex: 2;             
 }
 
 article.updown {
     display: flex;
     flex-direction: column;
     background-color: #669bbc;
-    margin-bottom: 25px;
 }
 
 article.sideside {
@@ -59,16 +70,25 @@ article.sideside {
 }
 
 ul {
+    padding-inline-start: 5%;
     list-style: none;
 }
 
 li {
+    font-size: 1em;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #fdf0d5;
+    padding: 5px 0px;
+}
+
+li a:hover {
+    font-size: larger;
 }
 
 p {
+    margin: auto;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #fdf0d5;
