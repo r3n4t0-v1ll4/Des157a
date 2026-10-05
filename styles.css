@@ -4,7 +4,7 @@ header {
     padding-top: 15px;
     padding-bottom: 25px;
     background-color: #780000;
-    transition: background-color 1s ease;
+    transition: background-color 1s ease-in-out;
 }
 
 body {
@@ -30,6 +30,7 @@ h2 {
 
 h3 {
     padding-left: 5%;
+    padding-top: 20px;
     font-family: "Cherry Bomb One", serif;
     color: #fdf0d5;
     font-size: 1.4em;
@@ -54,6 +55,19 @@ h3 {
     flex-direction: row;
     gap: 30px;
     flex: 2;             
+}
+
+article {
+    background-color: #669bbc;
+}
+
+article.postart {
+    margin: auto;
+    width: 50%;
+}
+
+article:hover {
+    scale: 1.2em;
 }
 
 article.updown {
@@ -82,8 +96,13 @@ li {
     padding: 5px 0px;
 }
 
+li a {
+  transition: all 0.5s ease; 
+}
+
 li a:hover {
     font-size: larger;
+    color: #780000;
 }
 
 p {
@@ -94,9 +113,20 @@ p {
     color: #fdf0d5;
 }
 
+p.postpara, p.postapara a {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
 a {
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #fdf0d5; 
 }
+
+/*when finished don't forget to do
+git add .
+git commit -m "lorem"
+git push*/
