@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <h2>Generate a silly nickname for yourself</h2>
+
+    <article>
+        <h3 id="greeting"></h3>
+        <button id="buttonNick">Click here to generate nickname!</button>
+        <p id="nicknameResult"></p>
+    </article>
+
+    <script>
+        /* my program gives the user a silly nickname */
+        let userName = prompt("What's your name?") || "stranger";
+        document.getElementById("greeting").textContent = `Hello, ${userName}!`;
+
+        let nicknames = ["the Humorous", "Onion-Eater", "the Hydrophobe", "French-Fry Destroyer"];
+
+        function randomInt(min, max) {
+            return Math.floor((max - min + 1) * Math.random()) + min;
+        }
+
+        document.getElementById("buttonNick").addEventListener("click", function () {
+            var chosenNickname = nicknames[randomInt(0, nicknames.length - 1)];
+            document.getElementById("nicknameResult").textContent = `${userName} ${chosenNickname}`;
+        });
+    </script>
+</body>
+</html>

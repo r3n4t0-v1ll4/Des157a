@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and the DOM</title>
+    <style>
+        .bluetext {color: blue;}
+    </style>
+</head>
+<body>
+    <h1>JavaScript and the DOM</h1>
+    <p id="one">Here is some text.</p>
+    <p class="funky">Another Paragraph</p>
+    <p class="funky">This one wont be orange</p>
+    <section>
+        <p>some stuff.</p>
+    </section>
+
+    <div>
+        <p>paragraph already here</p>
+    </div>
+
+    <script>
+        document.querySelector('#one').style.color = 'red';
+        document.querySelector('h1').style.color = 'green';
+        document.querySelector('.funky').style.color = 'orange';
+        /* querySelector() only gets one element */
+        /* querySelectorAll() always gives you an array */
+        var myFunkyElements = document.querySelectorAll('.funky');
+        /* console.log(myFunkyElements); */
+
+        /* for(var i=0; i,myFunkyElements.length; i++){
+            myFunkyElements[i].style.fontSize = "24px";
+        } */
+
+        for(var eachP of myFunkyElements){
+            eachP.style.fontSize = '24px';
+        }
+
+        document.querySelector('p').innerHTML = "booger picking stinknose"
+
+        document.querySelector('section').innerHTML = '<p>one paragraph</p><p>two paragraph</p><p>three paragraph</p>';
+
+        document.querySelector('section').className = 'bluetext';
+
+        var myTag = document.createElement('p');
+        var mySentence = document.createTextNode('second paragraph');
+        myTag.appendChild(mySentence);
+        document.querySelector('div').appendChild(myTag);
+    </script>
+</body>
+</html>
