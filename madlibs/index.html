@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Madlib</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Madlib: A Solo Adventure in Guatemala</h1>
+    </header>
+    <main>
+        <h2>Welcome to Renato's Madlib, here's how it works!</h2>
+        <p>On each blank box, insert the proper part of speech or valid input as directed by each label (ex. for "a noun" type in a person, place, or thing into the corresponding box). Have fun and play as many times as you'd like!</p>
+
+        <form id="madlib-form">
+            <section class="field">
+                <input type="text" id="firstName" required>
+                <label for="firstName">First Name</label>
+            </section>
+            <section class="field">
+                <input type="text" id="verb-ing" required>
+                <label for="verb-ing">Verb ending in "-ing"</label>
+            </section>
+            <section class="field">
+                <input type="text" id="adj1" required>
+                <label for="adj1">An Adjective</label>
+            </section>
+            <section class="field">
+                <input type="text" id="adj2" required>
+                <label for="adj2">An Adjective</label>
+            </section>
+            <section class="field">
+                <input type="text" id="adj3" required>
+                <label for="adj3">An Adjective</label>
+            </section>
+            <section class="field">
+                <input type="text" id="verb1" required>
+                <label for="verb1">A Verb</label>
+            </section>
+            <section class="field">
+                <input type="text" id="obj1" required>
+                <label for="obj1">A Physical Object</label>
+            </section>
+            <section class="field">
+                <input type="text" id="place1" required>
+                <label for="place1">A Place</label>
+            </section>
+            <section class="field">
+                <input type="text" id="adj4" required>
+                <label for="adj4">An Negative Adjective</label>
+            </section>
+            <section class="field">
+                <input type="text" id="food" required>
+                <label for="food">Food</label>
+            </section>
+            <section class="field">
+                <input type="text" id="adj5" required>
+                <label for="adj5">A Positive Adjective</label>
+            </section>
+            <section id="submit">
+                <input type="submit">
+                <a href="#" class="open"></a>
+            </section>
+        </form>
+    </main>
+
+    <section id="overlay" class="hidden">
+        <article>
+            <h2 id="greeting"></h2>
+            <p>After __ __ decide to travel alone to Guatemala. As soon as they arrived they were amazed by the __ landscape and __ streets. On their first morning, they woke up __ and decided to explore the local market. While __, they accidentally bought a __ from a friendly vendor. Later that day, they joined a bus headed toward __. The ride was exciting as well as __. By sunset, they were sitting somewhere beautiful, eating __ and realizing traveling alone had turned out to be a(n) __ experience!</p>
+            <img src="images/_DSC8432_Original.png" alt="picutre of Guatemala" width="600">
+        </article>
+    </section>
 </body>
 </html>

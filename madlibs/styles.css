@@ -1,0 +1,102 @@
+header {
+    background-color: #780000;
+}
+
+main {
+    background-color: #669bbc;
+}
+
+body {
+    display: flex;
+    margin: auto;
+    padding-top: 50px;
+    flex-direction: column;
+    background-color:rgb(79, 161, 148, 0.8);
+    width: 950px;
+}
+
+h1 {
+    color: #fdf0d5;
+    text-align: center;
+}
+
+h2 {
+    color: #fdf0d5;
+    text-align: center;
+}
+
+p {
+    margin: auto;
+    color: #fdf0d5;
+    font-size: 1.2em;
+    width: 500px;
+    padding-bottom: 20px;
+}
+
+#madlib-form {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    padding-bottom: 20px;
+}
+
+label {
+    color: rgb(74, 50, 5);
+}
+
+.field label {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field input {
+    padding: 8px;
+}
+
+section#submit {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: #669bbc;
+    padding: 20px;
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    display: flex;
+    margin: auto;
+}
+
+.showing {
+    display: block;
+}
+
+.hidden {
+   /*display: none;
+}
