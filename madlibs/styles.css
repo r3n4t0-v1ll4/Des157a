@@ -88,9 +88,14 @@ section#submit {
     transform: translate(-50%, -50%);
 }
 
+#madlib {
+    width: 90%;
+}
+
 img {
-    display: flex;
+    display: block;
     margin: auto;
+    max-width: 100%;
 }
 
 .showing {
@@ -98,5 +103,5 @@ img {
 }
 
 .hidden {
-   /*display: none;
+   display: none;
 }
