@@ -3,7 +3,7 @@ header {
 }
 
 main {
-    background-color: #5384a3;
+    background-color: #b4d0df;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
     margin: auto;
     padding-top: 50px;
     flex-direction: column;
-    background-color:rgba(223, 186, 208, 0.895);
+    background-color: #fdf0d5;
     width: 950px;
 }
 
