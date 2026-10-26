@@ -21,47 +21,47 @@
 
         let myText;
 
-        if(firstName == ' '){
+        if(firstName == ''){
             myText = 'Please provide your name!';
             document.querySelector('#firstName').focus();
         } 
-        else if (verbing1 == ' '){
+        else if (verbing1 == ''){
             myText = 'Please provide a verb ending in -ing';
             document.querySelector('#verb-ing1').focus();
         } 
-        else if (adj1 == ' '){
+        else if (adj1 == ''){
             myText = 'Please provide an adjective';
             document.querySelector('#adj1').focus();
         } 
-        else if (adj2 == ' '){
+        else if (adj2 == ''){
             myText = 'Please provide a second adjective';
             document.querySelector('#adj2').focus();
         }
-        else if (adj3 == ' '){
+        else if (adj3 == ''){
             myText = 'Please provide a third adjective';
             document.querySelector('#adj3').focus();
         }
-        else if (verbing2 == ' '){
+        else if (verbing2 == ''){
             myText = 'Please provide another verb ending in -ing';
             document.querySelector('#verb-ing2').focus();
         }
-        else if (obj1 == ' '){
+        else if (obj1 == ''){
             myText = 'Please provide an object';
             document.querySelector('#obj1').focus();
         }
-        else if (place1 == ' '){
+        else if (place1 == ''){
             myText = 'Please provide a place name';
             document.querySelector('#place1').focus();
         }
-        else if (adj4 == ' '){
+        else if (adj4 == ''){
             myText = 'Please provide a fourth adjective';
             document.querySelector('#adj4').focus();
         }
-        else if (food == ' '){
+        else if (food == ''){
             myText = 'Please provide a dish name';
             document.querySelector('#food').focus();
         }
-        else if (adj5 == ' '){
+        else if (adj5 == ''){
             myText = 'Please provide a fifth adjective';
             document.querySelector('#adj5').focus();
         }
