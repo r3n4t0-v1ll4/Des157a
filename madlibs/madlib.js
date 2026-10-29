@@ -90,4 +90,10 @@
             document.querySelector('#overlay').className = "hidden"
         }
     });
+
+    document.addEventListener('click', function(event){
+        if (event.target.id === "close"){
+            document.querySelector('#overlay').className = "hidden"
+        }
+    });
 } )();
