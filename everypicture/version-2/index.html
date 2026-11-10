@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Every Picture Experiment</title>
+    <title>Every Picture Version 1</title>
     <link rel="stylesheet" href="styles.css">
     <script src = 'script.js' defer></script>
 </head>
 <body>
     <header>
-        <h1>Every Picture Experiment</h1>
+        <h1>Fever Dreams</h1>
     </header>
 
     <main>
-        <article id="pic2-3">
+        <article id="slide">
             <!-- for these I'm planning on adding a third photo and creating a slideshow and possibly making it so that when you hover the photos it blurs up -->
-            <img src ="experiment/images/pic2.jpg" width="420px" alt="picture of LA">
-            <img src ="experiment/images/pic3.jpg" width="420px" alt="picture of jade masks">
+            <button id="previous">Previous</button>
+            <img src ="images/pic1.jpg" width="600" height="337" alt="Slideshow Image" id="myimage">
+            <button id="next">Next</button>
+            <p><a href="#" class="open">Page 2</a></p>
         </article>
-        <article>
-            <!-- for this one I plan to make it a mouse position interaction and it tells a historical narrative when you hover over the temple-->
-            <img src="experiment/images/pic4.jpg" height="420px" alt="picture of mayan temple" id="pic4">
-        </article>
+        <section id="overlay" class="hidden">
+            <article>
+                <p><a href="#" class="close">X</a></p>
+                <!-- for this one I plan to make it a mouse position interaction and it tells a historical narrative when you hover over the temple-->
+                <img src="images/pic42.jpg" usemap="#image-map" height="600" width="337" alt="picture of mayan temple" id="pic4">
+                <map name="image-map">
+                    <area alt="temple" title="temple" id="temple-area" coords="4,761,19,522,106,422,188,421,195,349,217,346,224,264,358,264,371,346,396,350,406,419,497,427,552,508,561,768,489,767,493,790,365,793,376,806,258,809,270,791,129,791,131,769" shape="poly">
+                </map>
+            </article>
+        </section>
     </main>
 </body>
 </html>

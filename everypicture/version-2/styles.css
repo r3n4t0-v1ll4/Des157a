@@ -5,30 +5,135 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #C2D9C6;
+    height: 100vh;
+}
+
 header {
     left: 0;
     top: 0;
-    background-color: #b77c7c;
+    background-color: #98b396;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-bottom: 20px;
 }
 
+main {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    background-color: #6c8879;
+}
+
 h1 {
-    text-align: center;    
+    text-align: center;
+    color: aliceblue;
+}
+
+button {
+    align-self: center;
+    height: 50px;
+    width: 75px;
+    background-color: #C2D9C6;
+    border-color: #3f5448;
+    color: #3f5448;
 }
 
 img {
-    padding-bottom: 20px;
+    object-fit: cover;
 }
 
-#pic2-3 {
+p a {
+    text-decoration: none;
+    padding: 5px;
+    color: #3f5448;
+    background-color: #C2D9C6;
+    border-style: solid;
+    border-color: #3f5448;
+}
+
+#slide {
     display: flex;
+    position: relative;
     justify-content: center;
-    gap: 10px
+    align-items: center;
+    gap: 10px;
+    height: 80vh;
+}
+
+#slide p {
+    margin-bottom: 15px;
+    align-self: flex-end;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
 }
 
 #pic4 {
     display: block;
     margin: auto;
+}
+
+#myimage{
+    filter: blur(4px);
+    transition: filter 0.4s ease-in-out;
+}
+
+#myimage:hover {
+    filter: none;
+    transition: filter 0.4s ease-in-out;
+}
+
+button:hover {
+    scale: calc(102%);
+}
+
+#overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay article {
+    display: flex;
+    background-color: #6c8879;
+    min-width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay article p {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#narrative-box {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    background-color: rgba(41, 40, 40, 0.8);
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    z-index: 10;
+    text-align: center;
+    pointer-events: none;
 }
